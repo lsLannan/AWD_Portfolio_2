@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+}
+
+body {
+    background-image: url(images/purple-gradient-bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+}
+/*TODO: need to center the text area and label*/
+#text7 {
+    display: none;
+    text-align: center;
+}
+
+#text7-label {
+    display: none;
+    text-align: left;
+}
+
+form {
+    margin: 100px;
+    padding: 100px 100px;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(130, 128, 223);
+    opacity: 90%;
+    border-radius: 5px;
+}
+
+form.outset {
+    border-style: outset;
+}
+
+.inputs {
+    margin: 5px;
+    width: 100%;
+}
+
+label {
+    text-align: center;
+}
+
+#textResult {
+    margin: 5px;
+}
+
+.button {
+    background-color: whitesmoke;
+}

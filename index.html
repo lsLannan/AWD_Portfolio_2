@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AWD P2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <br><h1>Portfolio 2</h1>
+
+        <form name="form" method="POST" action="" class="outset">
+            <h2>FORM</h2>
+            <!--6 texts fields-->
+            <label for="text1" class="labels">LABEL</label>
+            <input type="text" id="text1" name="inputs" class="inputs"><br>
+
+            <label for="text2" class="labels">LABEL</label>
+            <input type="text" id="text2" name="inputs" class="inputs"><br>
+
+            <label for="text3" class="labels">LABEL</label>
+            <input type="text" id="text3" name="inputs" class="inputs"><br>
+
+            <label for="text4" class="labels">LABEL</label>
+            <input type="text" id="text4" name="inputs" class="inputs"><br>
+
+            <label for="text5" class="labels">LABEL</label>
+            <input type="text" id="text5" name="inputs" class="inputs"><br>
+
+            <label for="text6" class="labels">LABEL</label>
+            <input type="text" id="text6" name="inputs" class="inputs"><br>
+
+            <!--extra button-->
+            <button type="button" id="extra-field" onclick="showFunction()" class="button">ADD TEXT BOX</button>
+
+            <label for="text7" id="text7-label" class="labels ">LABEL</label>
+            <input type="text" id="text7" name="inputs" class="inputs" placeholder="extra field"><br><br>
+
+
+            <!--Button to concatenate-->
+            <!--turn to submit and change form action to concat funct-->
+            <button type="button" onclick="concatFunction()" id="concat-button" class="button">CLICK ME TO CONCATENATE</button><br>
+
+            <!--<input type="submit" id="concat-button" onclick="concatFunction()"> -->
+            <!--results section-->
+            <textarea id="textResult" rows="4" cols="50" placeholder="WORDS"></textarea>
+            
+        </form>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>

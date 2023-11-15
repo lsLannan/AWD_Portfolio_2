@@ -11,30 +11,32 @@
     </head>
     <body>
         <header>
-            <br><h1>Portfolio 2</h1>
+            <h1>Portfolio 2</h1><br>
+            <p>Form that concatenates each input into text area</p>
+            <p>P.S You can add an extra input field by clicking "add text box"</p>
         </header>
 
         <section>
             <form name="form" method="POST" action="" class="outset">
                 <h2>FORM</h2>
                 <!--6 texts fields-->
-                <label for="text1" class="labels">LABEL</label>
-                <input type="text" id="text1" name="inputs" class="inputs"><br>
+                <!--<label for="text1" class="labels">LABEL</label>-->
+                <input type="text" id="text1" name="inputs" class="inputs" placeholder="Word 1"><br>
 
-                <label for="text2" class="labels">LABEL</label>
-                <input type="text" id="text2" name="inputs" class="inputs"><br>
+                <!--<label for="text2" class="labels">LABEL</label>-->
+                <input type="text" id="text2" name="inputs" class="inputs" placeholder="Word 2"><br>
 
-                <label for="text3" class="labels">LABEL</label>
-                <input type="text" id="text3" name="inputs" class="inputs"><br>
+                <!--<label for="text3" class="labels">LABEL</label>-->
+                <input type="text" id="text3" name="inputs" class="inputs" placeholder="Word 3"><br>
 
-                <label for="text4" class="labels">LABEL</label>
-                <input type="text" id="text4" name="inputs" class="inputs"><br>
+                <!--<label for="text4" class="labels">LABEL</label>-->
+                <input type="text" id="text4" name="inputs" class="inputs" placeholder="Word 4"><br>
 
-                <label for="text5" class="labels">LABEL</label>
-                <input type="text" id="text5" name="inputs" class="inputs"><br>
+                <!--<label for="text5" class="labels">LABEL</label>-->
+                <input type="text" id="text5" name="inputs" class="inputs" placeholder="Word 5"><br>
 
-                <label for="text6" class="labels">LABEL</label>
-                <input type="text" id="text6" name="inputs" class="inputs"><br>
+                <!--<label for="text6" class="labels">LABEL</label>-->
+                <input type="text" id="text6" name="inputs" class="inputs" placeholder="Word 6"><br>
 
                 <!--extra button-->
                 <button type="button" id="extra-field" onclick="showFunction()" class="button">ADD TEXT BOX</button>
@@ -49,7 +51,7 @@
 
                 <!--<input type="submit" id="concat-button" onclick="concatFunction()"> -->
                 <!--results section-->
-                <textarea id="textResult" rows="4" cols="50" placeholder="WORDS"></textarea>
+                <textarea id="textResult" rows="4" cols="50" placeholder=""></textarea>
                 
             </form>
         </section>

@@ -1,17 +1,30 @@
+@font-face {
+    font-family: "Agbalumo";
+    src: url(fonts/Agbalumo-Regular.ttf);
+}
+
+@font-face {
+    font-family: "VinaSans";
+    src: url(fonts/VinaSans-Regular.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
-    font-family: Helvetica;
+    font-family: "VinaSans", serif;
 }
 
 body {
-    background-image: url(images/purple-gradient-bg.jpg);
+    background-image: linear-gradient(to right, rgb(130, 128, 223) , rgb(207, 82, 207));
     background-size: 100% 100%;
     background-repeat: repeat-y;
+    text-align: center;
 }
 
-h1 {
+header {
     text-align: center;
+    font-family: "VinaSans", serif; /* serif fallback */
+    padding: 25px 0 0 0;
 }
 /*TODO: need to center the text area and label*/
 #text7 {
@@ -26,31 +39,63 @@ h1 {
 
 form {
     margin: 100px;
-    padding: 100px 100px;
+    padding: 50px;
     width: 500px;
     height: 500px;
-    background-color: rgb(130, 128, 223);
-    opacity: 90%;
-    border-radius: 5px;
+    background-color: white;
+    opacity: 80%;
+    border-radius: 15px; /* nice rounded corners */
+    display: inline-block;
 }
 
+/*
 form.outset {
     border-style: outset;
 }
+*/
 
 .inputs {
     margin: 5px;
     width: 100%;
+    border: 1px solid black;
+    border-radius: 15px; /* nice rounded corners */
+    background-color: rgb(250, 250, 250);
+    padding: 5px;
+    float: right;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 label {
-    text-align: center;
+    float: left;
 }
 
 #textResult {
     margin: 5px;
+    width: 100%;
+    border-radius: 15px; /* nice rounded corners */
 }
 
 .button {
-    background-color: whitesmoke;
+    background-color: rgb(130, 128, 223);
+    color: black;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+.button:hover {
+    background-color: rgb(207, 82, 207);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }

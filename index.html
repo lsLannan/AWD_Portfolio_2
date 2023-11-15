@@ -13,12 +13,12 @@
         <header>
             <h1>Portfolio 2</h1><br>
             <p>Form that concatenates each input into text area</p>
-            <p>P.S You can add an extra input field by clicking "add text box"</p>
+            <p>P.S You can add an extra input field by clicking "add text box"</p><br>
         </header>
 
         <section>
             <form name="form" method="POST" action="" class="outset">
-                <h2>FORM</h2>
+                <h2>FORM</h2><br>
                 <!--6 texts fields-->
                 <!--<label for="text1" class="labels">LABEL</label>-->
                 <input type="text" id="text1" name="inputs" class="inputs" placeholder="Word 1"><br>
@@ -41,23 +41,25 @@
                 <!--extra button-->
                 <button type="button" id="extra-field" onclick="showFunction()" class="button">ADD TEXT BOX</button>
 
-                <label for="text7" id="text7-label" class="labels ">LABEL</label>
+                <!--<label for="text7" id="text7-label" class="labels ">LABEL</label>-->
                 <input type="text" id="text7" name="inputs" class="inputs" placeholder="extra field"><br><br>
 
+
+    
+                <!--<input type="submit" id="concat-button" onclick="concatFunction()"> -->
+                <!--results section-->
+                <textarea id="textResult" rows="4" cols="50" placeholder=""></textarea>
 
                 <!--Button to concatenate-->
                 <!--turn to submit and change form action to concat funct-->
                 <button type="button" onclick="concatFunction()" id="concat-button" class="button">CLICK ME TO CONCATENATE</button><br>
 
-                <!--<input type="submit" id="concat-button" onclick="concatFunction()"> -->
-                <!--results section-->
-                <textarea id="textResult" rows="4" cols="50" placeholder=""></textarea>
                 
             </form>
         </section>
 
         <footer>
-            <p>Coded by Lslannan :)</p>
+            <p>Made by Lslannan :)  </p>
         </footer>
         
         <script src="script.js" async defer></script>

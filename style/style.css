@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Agbalumo";
-    src: url(fonts/Agbalumo-Regular.ttf);
+    src: url("fonts/Agbalumo-Regular.ttf");
 }
 
 @font-face {
     font-family: "VinaSans";
-    src: url(fonts/VinaSans-Regular.ttf);
+    src: url("VinaSans-Regular.ttf");
 }
 
 * {
@@ -15,16 +15,18 @@
 }
 
 body {
-    background-image: linear-gradient(to right, rgb(130, 128, 223) , rgb(207, 82, 207));
-    background-size: 100% 100%;
-    background-repeat: repeat-y;
+    /*background-image: linear-gradient(goes down, rgb(130, 128, 223) , rgb(207, 82, 207));*/
     text-align: center;
+    background: rgb(130, 128, 223);
+    background: radial-gradient(circle, rgba(130, 128, 223,1) 0%, rgba(207, 82, 207,1) 100%);
 }
 
 header {
     text-align: center;
-    font-family: "VinaSans", serif; /* serif fallback */
+    font-family: "VinaSans", sans-serif; /* sans-serif fallback */
     padding: 25px 0 0 0;
+    background-color: black;
+    color: white;
 }
 /*TODO: need to center the text area and label*/
 #text7 {
@@ -55,24 +57,27 @@ form.outset {
 */
 
 .inputs {
-    margin: 5px;
+    margin: 10px;
     width: 100%;
     border: 1px solid black;
     border-radius: 15px; /* nice rounded corners */
     background-color: rgb(250, 250, 250);
     padding: 5px;
-    float: right;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /*cool shadow effect*/
 }
 
+/*
 label {
     float: left;
 }
+*/
 
 #textResult {
     margin: 5px;
     width: 100%;
+    border: 1px solid black;
     border-radius: 15px; /* nice rounded corners */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /*cool shadow effect*/
 }
 
 .button {
@@ -81,7 +86,7 @@ label {
     border-radius: 15px;
     border: none;
     padding: 5px;
-    margin: 5px;
+    margin: 10px;
     width: 100%;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -97,5 +102,6 @@ footer {
     width: 100%;
     background-color: black;
     color: white;
-    text-align: center;
+    text-align: right;
+    padding: 15px 35px 10px 0;
   }

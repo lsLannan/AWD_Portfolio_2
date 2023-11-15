@@ -93,6 +93,7 @@ label {
 
 .button:hover {
     background-color: rgb(207, 82, 207);
+    cursor: pointer;
 }
 
 footer {

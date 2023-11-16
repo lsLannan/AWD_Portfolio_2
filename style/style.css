@@ -5,13 +5,18 @@
 
 @font-face {
     font-family: "VinaSans";
-    src: url("VinaSans-Regular.ttf");
+    src: url("fonts/VinaSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "KdamThmor";
+    src: url("fonts/KdamThmorPro-Regular.ttf");
 }
 
 * {
     padding: 0;
     margin: 0;
-    font-family: "VinaSans", sans-serif;
+    /* font-family: "KdamThmor", sans-serif; */
 }
 
 body {
@@ -23,7 +28,7 @@ body {
 
 header {
     text-align: center;
-    font-family: "VinaSans", sans-serif; /* sans-serif fallback */
+    font-family: "KdamThmor", sans-serif; /* sans-serif fallback */
     padding: 25px 0 0 0;
     background-color: black;
     color: white;
@@ -41,13 +46,14 @@ header {
 
 form {
     margin: 100px;
-    padding: 50px;
+    padding: 55px;
     width: 500px;
     height: 500px;
     background-color: white;
     opacity: 80%;
     border-radius: 15px; /* nice rounded corners */
     display: inline-block;
+    font-family: monospace;
 }
 
 /*
@@ -89,6 +95,7 @@ label {
     padding: 5px;
     margin: 10px;
     width: 100%;
+    font-family: "KdamThmor";
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -106,4 +113,5 @@ footer {
     color: white;
     text-align: right;
     padding: 15px 35px 10px 0;
+    font-family: "KdamThmor";
   }
